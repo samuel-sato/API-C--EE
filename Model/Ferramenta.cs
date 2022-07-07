@@ -43,7 +43,6 @@ namespace DesafioAPI.Model
             var mes = DateTime.Now.Month - date.Month;
             var dia = DateTime.Now.Day - date.Day;
 
-            Console.WriteLine($"Idade {dia} {mes} {ano}");
 
             if (ano >=18)
             {
