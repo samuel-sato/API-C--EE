@@ -14,7 +14,7 @@ NomeCompleto string
 CPF string
 DataNascimento Datetime 
 Sexo string 
-Apenas 1 caractere (M = Masculino,F = Feminino )
+Apenas 1 caractere (M = Masculino, F = Feminino )
 Ativo boolean
 NumeroRegistro int 
 CEP string 
@@ -24,32 +24,37 @@ DataCriacao Datetime
 ```
 
 ## ENDPOINT
-> Buscar todos os profissionais em ordem alfabetica
+> Buscar todos os profissionais em ordem alfabética
 {GET}
+Resposta: lista de profissionais
 ```
 /profissional/busca/todos
 ```
 
 > Busca profissional por nome
 {GET}
+Resposta: lista de profissionais
 ```
 /profissional/busca/nome/{nome}
 ```
 
 > Busca profissionais por range de registro
 {GET}
+Resposta: lista de profissionais
 ```
 /profissional/busca/registro/{x-y}
 ```
 
 > Busca profissionais ativos
 {GET}
+Resposta: lista de profissionais
 ```
 /profissional/busca/ativo
 ```
 
 > Criar profissional
 {POST}
+Resposta: profissional criado
 ```
 /profissional
 ```
@@ -57,6 +62,7 @@ Passar profissional no corpo da requisição. Profissional (NomeCompleto,CPF, Da
 
 > Editar profissional
 {PUT}
+Resposta: profissional editado
 ```
 /profissional/{id}
 ```
@@ -64,6 +70,7 @@ Passar profissional no corpo da requisição. Profissional (NomeCompleto,CPF, Da
 
 > Deletar profissional
 {DELETE}
+Resposta: profissional deletado
 ```
 /profissional/{id}
 ```
